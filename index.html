@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*Header Grid Area*/
+            .header { 
+                grid-area: header; 
+                background-color: blue;
+            }
+
+            /*Aside Grid Area*/
+            .aside { 
+                grid-area: aside; 
+                background-color: aqua;
+            }
+
+            /*Navigation Bar Grid Area*/
+            .nav { 
+                grid-area: nav; 
+                background-color: blueviolet;
+            }
+
+            /*Article Grid Area*/
+            .article { 
+                grid-area: article;
+                background-color: aquamarine;
+            }
+
+            /*Footer Grid Area*/
+            .footer { 
+                grid-area: footer; 
+                background-color: brown;
+            }
+
+            /*Default Grid Container*/
+            .grid-container {
+                display: grid;
+                grid-template-areas: 
+                'header header'
+                'nav nav'
+                'aside article'
+                'footer footer';
+                grid-template-columns: 20% 80%;
+            }
+
+            /*Makes P tags inline*/
+            p {
+                display: inline;
+            }
+
+            /*If screen is 500px or less, Aside and Article has its own row*/
+            @media (max-width:500px) {
+                .grid-container {
+                    display: grid;
+                    grid-template-areas: 
+                    'header header'
+                    'nav nav'
+                    'aside aside'
+                    'article article'
+                    'footer footer';
+                }
+            }
+        </style>
+    <head>
+    <body>
+        <main class="grid-container">
+            <header class="header">
+                <h1>Header</h1>
+            </header>
+            <nav class="nav">
+                <p>Link</p>
+                <p>Link</p>
+            </nav>
+            <aside class="aside">
+                <p>Aside</p>
+            </aside>
+            <article class="article">
+                <p>Article</p>
+            </article>
+            <footer class="footer">
+                <p>Footer</p>
+            </footer>
+        </main>
+    </body>
+</html>
