@@ -60,6 +60,57 @@
                     'footer footer';
                 }
             }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                overflow: hidden;
+                background-color: aqua;
+            }
+
+            nav li {
+                float: left;
+            }
+
+            nav li a {
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            nav li a:hover {
+                background-color: green;
+            }
+
+            nav .active {
+                background-color: black;
+                color: white;
+            }
+
+            aside ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: auto;
+                background-color: pink;
+            }
+
+            aside li a {
+                display: block;
+                color: blue;
+                padding:0;
+                text-decoration: none;
+            }
+
+            aside li a:hover {
+                background-color: green;
+            }
+
+            aside .active {
+                background-color: black;
+                color: white;
+            }
         </style>
     <head>
     <body>
@@ -68,11 +119,24 @@
                 <h1>Header</h1>
             </header>
             <nav class="nav">
-                <p>Link</p>
-                <p>Link</p>
+                <ul>
+                    <li><a class="active" href="about.html">About The Company</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                    <li><a href="policies.html">Compliance</a></li>
+                    <li><a href="policies.html">Benefits</a></li>
+                    <li><a href="policies.html">Paid Time Off and Leave</a></li>
+                    <li><a href="policies.html">Office Conduct</a></li>
+                </ul>
             </nav>
             <aside class="aside">
-                <p>Aside</p>
+                <ul>
+                    <li><a class="active" href="about.html">About The Company</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                    <li><a href="policies.html">Compliance</a></li>
+                    <li><a href="policies.html">Benefits</a></li>
+                    <li><a href="policies.html">Paid Time Off and Leave</a></li>
+                    <li><a href="policies.html">Office Conduct</a></li>
+                </ul>
             </aside>
             <article class="article">
                 <p>Article</p>
